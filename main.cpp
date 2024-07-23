@@ -1,7 +1,7 @@
 ﻿#include "pch.h"
 
 //
-// Credit/Reference: https://github.com/microsoft/Windows-classic-samples/blob/main/Samples/DisplayCoreCustomCompositor/cpp/DisplayCoreCustomCompositor.cpp
+// Credit/Reference: https://github.com/microsoft/Windows-classic-samples/blob/main/Samples/DisplayCoreCustomCompositor
 //
 
 #include <iostream>
@@ -74,9 +74,9 @@ int main()
 {
     winrt::init_apartment();
 
-    std::wcout << "--------------------------------------------------" << std::endl;
-    std::wcout << "Windows EDID read utility v1.0 - Intel Corporation" << std::endl;
-    std::wcout << "--------------------------------------------------" << std::endl << std::endl;
+    std::wcout << "------------------------------" << std::endl;
+    std::wcout << "Windows EDID read utility v1.0" << std::endl;
+    std::wcout << "------------------------------" << std::endl << std::endl;
 
     // Create a DisplayManager instance for owning targets and managing the displays
     auto manager = winrt::DisplayManager::Create(winrt::DisplayManagerOptions::None);
